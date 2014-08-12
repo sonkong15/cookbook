@@ -3,65 +3,89 @@
 
         <!-- Heading Row -->
         <div class="row">
-            <div class="col-md-4">
-                <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="">
+            
+            <!-- /.col-md-8 -->
+            <div class="col-md-12">
+                <div class="jumbotron">
+                <h1>How to create outstanding meal that won't kill your health </h1>
+                <p style="color: cadetblue;">Great tasting meals shouldn't have to ruin your health that's what I believe But -- yet many of my clients still think "boring" when they imagine a healthy meal. I tell them they don't have to be whizzes in the kitchen to make healthy food taste good. we will teach you how to pick up a few key, flavorful items from the grocery store tha can make a big difference </p>
+                
+                </div>
             </div>
             <!-- /.col-md-8 -->
-            <div class="col-md-8">
-                <h1>how to create outstanding meal that won't kill your health </h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
-            </div>
-            <!-- /.col-md-4 -->
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Call to Action Well -->
+        <!-- /row -->
+         <!-- Call to Action Well -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="well text-center">
-                    This is a well that is a great spot for a business tagline or phone number for easy access!
+                <div class="well text-center" style="background-color:rgba(135, 216, 236, 0.91); font-size: 21px;">
+                    <h4>Imagine yourself creating great tasting meals that's heahtly for you and your Family </h4>
                 </div>
             </div>
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
-
-        <!-- Content Row -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Heading 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
+            <div class="row">
+            <div class="col-md-12">
+                <div style="width: 1017px; margin: 0px auto;">
+                <%= image_tag("foodone.jpg", class:"img-circle") %>
+                
+                <%= image_tag("foodthree.jpg", class:"img-circle") %>
+                <%= image_tag("foodfour.jpg", class:"img-circle") %>
+                <%= image_tag("foodfive.jpg", class:"img-circle") %>
+                <%= image_tag("foodsix.jpg", class:"img-circle") %>
+                </div>
             </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
-                <h2>Heading 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
-                <h2>Heading 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
-            </div>
-            <!-- /.col-md-4 -->
         </div>
         <!-- /.row -->
-        <hr>
+        
+        <hr class="featurette-divider" style="margin: 80px 0;">
+        <div class="featurette" id="about">
+            <%= image_tag("500food.jpg", :class => "featurette-image img-circle img-responsive pull-right") %>
+            <h2 class="featurette-heading" style="font-size: 50px;">How Can We Help?
+                <span class="text-muted" style="color: #39F1E3;">Let Us provide the way to better eating</span>
+            </h2>
+            <p class="lead">We went on a mission to create the one website that would cover it all. We send out weekly hot meal ideas we also allow user with 
+                great meal ideas to share them with the world. healthly eating is very important and we would like to change the way you look at eating healthy. over the years we created a 350+ racipe book that covers it all. at Paleo Leap we just give away free bonuses to help you and your family eat better  </p>
+        </div>
+        <div style="clear: both;"></div>
+        <hr class="featurette-divider"style="margin: 80px 0;" >
+        <div class="featurette" id="services"> 
+            <%= image_tag("501food.jpg", :class => "featurette-image img-circle img-responsive pull-left") %>
+            
+            <h2 class="featurette-heading"style="font-size: 50px;">The Second Heading
+                <span class="text-muted"style="color: #39F1E3;">Is Pretty Cool Too.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div style="clear: both;"></div>
+        <hr class="featurette-divider"style="margin: 80px 0;" >
         <div class="row">
             <div class="col-md-12">
-                <div class="alert alert-dismissable alert-info">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                     <h3 class="panel-title">Panel info</h3>
+                    </div>
+                    <div class="panel-body" style="background-color: darkturquoise;">
+                    Panel content
+                     <form class="subscription-form form-inline" id="subscription-form" novalidate="">
+                <!-- Email field -->
+                 <input type="email" class="subscription-email" style="margin-right: 25px;border-radius: 28px;" id="subscription-email" name="email" placeholder="Name">
+                <input type="email" class="subscription-email" id="subscription-email" name="email" placeholder="Email">
+                <!-- /Email field -->
+
+                <!-- Subscribe button -->
+                <div class="subscription-submit-container">
+                    <button class="subscription-submit btn btn-large" style="border-radius: 27px;" id="subscription-submit">SUBSCRIBE</button>
                 </div>
+                
+            </form>
 
             </div>
-
+            <!-- /Subscribe button -->
+         </div>
         </div>
+                
 
         <!-- Footer -->
         <footer>
