@@ -17,8 +17,8 @@ development:
   encoding: unicode
   database: cps_development
   pool: 5
-  username: postgres
-  password: sonkong15
+  username: administrator
+  password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,8 +43,8 @@ test:
   encoding: unicode
   database: cps_test
   pool: 5
-  username: postgres
-  password: sonkong15
+  username: administrator
+  password: 
 
 production:
   adapter: postgresql
